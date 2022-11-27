@@ -1,0 +1,9 @@
+.tip {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.tip .delete {
+  color: hotpink;
+}

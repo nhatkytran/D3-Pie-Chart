@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Materialize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+
+    <!-- D3JS -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+    <!-- D3 Legend -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"
+      integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- D3 V6 Tip -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.min.css"
+    />
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./src/index.js"></script>
+  </head>
+  <body class="indigo">
+    <header class="indigo darken-1 section">
+      <h2 class="center white-text">Ninja</h2>
+      <p class="text_flow grey-text center text-lighten-2">
+        Monthly money tracker for Ninja
+      </p>
+    </header>
+
+    <div class="container section">
+      <div class="row">
+        <div class="col s12 m6">
+          <form class="card z-depth-0">
+            <div class="card-content">
+              <span class="card-title indigo-text">Add Item:</span>
+              <div class="input-field">
+                <input type="text" id="name" />
+                <label for="name">Item Name</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="cost" />
+                <label for="cost">Item Cost (£)</label>
+              </div>
+              <div class="input-field center">
+                <button type="submit" class="btn-large pink white-text">
+                  Add Item
+                </button>
+              </div>
+              <div class="input-field center">
+                <p id="error" class="red-text"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col s12 m5 push-m1">
+          <div class="canvas"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
